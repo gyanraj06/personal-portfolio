@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom cursor only on desktop */
+@media (min-width: 768px) {
+  body {
+    cursor: none;
+  }
+
+  * {
+    cursor: none !important;
+  }
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3CDA64;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navigation flip animation */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 1.2em;
+}
+
+.nav-link span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform: translateY(0);
+}
+
+.nav-link:hover span {
+  animation: flipText 0.6s ease forwards;
+}
+
+@keyframes flipText {
+  0% {
+    transform: translateY(0) rotateX(0deg);
+  }
+  50% {
+    transform: translateY(-100%) rotateX(-90deg);
+    color: #3CDA64;
+  }
+  51% {
+    transform: translateY(100%) rotateX(90deg);
+    color: #3CDA64;
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg);
+    color: white;
+  }
+}
+
+/* Arrow bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.arrow-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Marquee animations */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marquee-rtl {
+  animation: marqueeRTL 30s linear infinite;
+}
+
+.marquee-ltr {
+  animation: marqueeLTR 30s linear infinite;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.05em;
+}
+
+.marquee-text-white {
+  color: rgba(255, 255, 255, 1);
+}
+
+@keyframes marqueeRTL {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes marqueeLTR {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Footer button flip animation */
+.footer-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.footer-link .flip-text {
+  display: inline-block;
+  transition: transform 0.15s ease, color 0.15s ease;
+  transform: translateY(0);
+}
+
+.footer-link:hover .flip-text {
+  animation: flipTextFooter 0.3s ease forwards;
+}
+
+.footer-link:hover .flip-arrow {
+  animation: flipTextFooter 0.3s ease forwards;
+}
+
+@keyframes flipTextFooter {
+  0% {
+    transform: translateY(0) rotateX(0deg);
+    color: white;
+  }
+  50% {
+    transform: translateY(-100%) rotateX(-90deg);
+    color: #3CDA64;
+  }
+  51% {
+    transform: translateY(100%) rotateX(90deg);
+    color: #3CDA64;
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg);
+    color: #3CDA64;
+  }
+}

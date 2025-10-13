@@ -1,0 +1,6 @@
+.claude
+.qwen
+*.md
+.playwright-mcp 
+.env
+.vercel
