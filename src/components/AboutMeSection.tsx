@@ -44,7 +44,7 @@ const AboutMeSection: React.FC = () => {
                   href="mailto:nalaprasaddesigns@gmail.com"
                   className="text-white text-xs sm:text-sm md:text-base font-light hover:text-[#3CDA64] transition-colors"
                 >
-                  nalaprasaddesigns@gmail.com
+                  rajvaidhyag@gmail.com
                 </a>
               </div>
 
