@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
       {/* Very bottom - Made manually text */}
       <div className="border-t border-white/10 px-4 sm:px-8 md:px-12 lg:px-[60px] py-4">
         <p className="text-white/30 text-xs sm:text-sm font-light italic text-center">
-          proudly made manually, no framer and stuffs
+          Gyan Raj | Portfolio
         </p>
       </div>
     </footer>

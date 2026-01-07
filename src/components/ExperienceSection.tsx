@@ -127,12 +127,12 @@ const ExperienceSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Card 3 - Stockone */}
+          {/* Card 3 - Happy Holidays */}
           <div className="experience-card w-full">
             <div className="relative group cursor-pointer">
               <img
-                src="/Frame-4.png"
-                alt="Stockone project"
+                src="/hh1.png"
+                alt="Happy Holidays project"
                 className="w-full h-auto object-cover rounded-[25px] sm:rounded-[35px] md:rounded-[50px]"
               />
               {/* Arrow in bottom left corner */}
@@ -158,49 +158,11 @@ const ExperienceSection: React.FC = () => {
 
             {/* Description below card */}
             <div className="mt-4 sm:mt-6 md:mt-8">
-              <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-light mb-2 sm:mb-3">Stockone</h3>
+              <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-light mb-2 sm:mb-3">Happy Holidays</h3>
               <p className="text-white/80 text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                E2E UI Driven Warehouse management system for Stockone that contributes in functionality such as Inventory management, Workflow Automations and Real time tracking and reporting
+                A comprehensive Booking Management System (BMS) for managing property bookings, inventory, and guest experiences. Built with Next.js, Supabase, and Firebase.
               </p>
             </div>
-          </div>
-        </div>
-
-        {/* Card 4 - Shipkaro - Full width */}
-        <div className="experience-card w-full mt-8 sm:mt-10 md:mt-12 lg:mt-16">
-          <div className="relative group cursor-pointer">
-            <img
-              src="/Frame-38.png"
-              alt="Shipkaro project"
-              className="w-full h-auto object-cover rounded-[25px] sm:rounded-[35px] md:rounded-[50px]"
-            />
-            {/* Arrow in bottom left corner */}
-            <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 w-[35px] h-[35px] sm:w-[42px] sm:h-[42px] md:w-[50px] md:h-[50px] bg-white rounded-full flex items-center justify-center transition-transform group-hover:scale-110">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="transform -rotate-45 transition-transform group-hover:rotate-[-5deg] sm:w-5 sm:h-5 md:w-6 md:h-6"
-              >
-                <path
-                  d="M7 17L17 7M17 7H7M17 7V17"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-          </div>
-
-          {/* Description below card */}
-          <div className="mt-4 sm:mt-6 md:mt-8">
-            <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-light mb-2 sm:mb-3">Shipkaro</h3>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg font-light leading-relaxed">
-              Structural product design and website development for Shipkaro, a logistics aggregator and shipping management platform that enables e-com business to simplify and optimize the shipping operations
-            </p>
           </div>
         </div>
 
