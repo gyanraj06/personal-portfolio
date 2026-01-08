@@ -13,7 +13,7 @@ const MyApproachSection: React.FC = () => {
     {
       id: 1,
       title: 'User Research',
-      description: 'I conduct thorough research, using methods like interviews, surveys, and analytics to gather qualitative and quantitative data. This guides design decisions, ensuring the final output.'
+      description: 'I conduct thorough researchs, using methods like interviews, surveys, and analytics to gather qualitative and quantitative data. This guides design decisions, ensuring the final output.'
     },
     {
       id: 2,
