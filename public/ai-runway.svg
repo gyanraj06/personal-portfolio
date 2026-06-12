@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Runway "R" mark -->
+  <path fill="white" d="
+    M 15 10 L 15 90 L 30 90 L 30 58 L 48 58 L 65 90 L 82 90 L 63 56
+    C 72 52 78 44 78 34 C 78 20 68 10 52 10 Z
+    M 30 22 L 50 22 C 60 22 65 27 65 34 C 65 41 60 46 50 46 L 30 46 Z
+  "/>
+</svg>

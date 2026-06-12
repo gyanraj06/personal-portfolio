@@ -1,34 +1,19 @@
-import React, { useState } from 'react';
-import HeroSection from './components/HeroSection';
-import ZeroToOneSection from './components/ZeroToOneSection';
-import MyApproachSection from './components/MyApproachSection';
-import NumberExperienceSection from './components/NumberExperienceSection';
-import ExperienceSection from './components/ExperienceSection';
-import AboutMeSection from './components/AboutMeSection';
-import Footer from './components/Footer';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
 import CustomCursor from './components/CustomCursor';
-import LoadingScreen from './components/LoadingScreen';
+import HomePage from './pages/HomePage';
+import ResumePage from './pages/ResumePage';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
-
   return (
     <>
-      {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
-      <div className="App">
-        <CustomCursor />
-        <HeroSection />
-        <ZeroToOneSection />
-        <MyApproachSection />
-        <ExperienceSection />
-        <NumberExperienceSection />
-        <AboutMeSection />
-        <Footer />
-      </div>
+      <CustomCursor />
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/resume" element={<ResumePage />} />
+      </Routes>
     </>
   );
 }

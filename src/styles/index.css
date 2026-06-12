@@ -57,7 +57,7 @@ code {
 }
 
 .nav-link:hover span {
-  animation: flipText 0.6s ease forwards;
+  animation: flipText 0.3s ease forwards;
 }
 
 @keyframes flipText {

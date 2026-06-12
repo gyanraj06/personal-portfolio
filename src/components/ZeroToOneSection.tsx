@@ -111,6 +111,36 @@ const ZeroToOneSection: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* AI Tools Section */}
+      <div className="w-full mt-10 sm:mt-12 md:mt-16">
+        <h3 className="text-white text-base sm:text-lg md:text-xl font-light text-center mb-6 sm:mb-8">
+          AI Tools
+        </h3>
+
+        <div className="flex justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-14 flex-wrap px-4 sm:px-6 md:px-8">
+          <div className="flex flex-col items-center gap-2 sm:gap-3 w-12 sm:w-14 md:w-16">
+            <img src="/ai-claude.svg" alt="Claude" className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain" />
+            <span className="text-white text-[10px] sm:text-xs md:text-sm font-light">Claude</span>
+          </div>
+          <div className="flex flex-col items-center gap-2 sm:gap-3 w-12 sm:w-14 md:w-16">
+            <img src="/ai-cursor.svg" alt="Cursor" className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain" />
+            <span className="text-white text-[10px] sm:text-xs md:text-sm font-light">Cursor</span>
+          </div>
+          <div className="flex flex-col items-center gap-2 sm:gap-3 w-12 sm:w-14 md:w-16">
+            <img src="/ai-perplexity.svg" alt="Perplexity" className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain" />
+            <span className="text-white text-[10px] sm:text-xs md:text-sm font-light">Perplexity</span>
+          </div>
+          <div className="flex flex-col items-center gap-2 sm:gap-3 w-12 sm:w-14 md:w-16">
+            <img src="/ai-midjourney.svg" alt="Midjourney" className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain" />
+            <span className="text-white text-[10px] sm:text-xs md:text-sm font-light">Midjourney</span>
+          </div>
+          <div className="flex flex-col items-center gap-2 sm:gap-3 w-12 sm:w-14 md:w-16">
+            <img src="/ai-runway.svg" alt="Runway" className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain" />
+            <span className="text-white text-[10px] sm:text-xs md:text-sm font-light">Runway</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
